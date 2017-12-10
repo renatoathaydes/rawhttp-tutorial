@@ -107,12 +107,12 @@ fun responseExample() {
 
 fun fileBodyExample() {
 
-val response = RawHttp().parseResponse("""
+    val response = RawHttp().parseResponse("""
     HTTP/1.1 200 OK
     Server: RawHTTP
 """.trimIndent()
-).replaceBody(FileBody(File("example.json"), "application/json", true))
+    ).replaceBody(FileBody(File("example.json"), "application/json", true))
 
-println(response.eagerly())
+    println(response.eagerly())
 
 }
