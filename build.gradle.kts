@@ -9,8 +9,6 @@ plugins {
     kotlin("jvm") version "1.2.0"
 }
 
-val kotlin_version: String by extra
-
 repositories {
     mavenCentral()
 }
